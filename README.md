@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# عيادة د. دينا مصطفى إبراهيم | الموقع الإلكتروني الرسمي
+## (Dr. Dina Mostafa Clinic - Official Next.js Website)
 
-## Getting Started
+موقع طبي متكامل ومطور بأحدث تقنيات **Next.js 16 (App Router) + Tailwind CSS v4 + TypeScript**، مصمم خصيصاً للتوافق الكامل مع اللغة العربية (RTL) ومعايير تحسين محركات البحث الطبية (Medical SEO & Schema.org).
 
-First, run the development server:
+---
+
+## 🚀 التشغيل والتطوير المحلي (Quick Start)
+
+تم استخدام **Bun** كمدير حزم فائق السرعة لتشغيل وتطوير المشروع:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# الانتقال لمجلد الموقع
+cd website
+
+# تشغيل خادم التطوير (Port 3002)
+bun run dev --port 3002
+
+# بناء النسخة الإنتاجية
+bun run build
+
+# تشغيل النسخة الإنتاجية
+bun run start --port 3002
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+الموقع يعمل محلياً الآن على: **`http://localhost:3002`**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌟 مميزات وأقسام الموقع
 
-## Learn More
+1. **Header تفاعلي:**
+   - شريط إشعارات علوي للإعلان عن المقر الجديد بالسبع عمارات بمصر الجديدة.
+   - روابط تنقل سريعة وقائمة جانبية للهواتف الذكية.
+   - زر اتصال مباشر برقم العيادة الموحد: `01021107881`.
+2. **Hero Section عالي التحويل (High-Converting Hero):**
+   - استعراض المكانة الأكاديمية (استشاري كلية الطب جامعة عين شمس).
+   - محدد تفاعلي سريع للفرع (مصر الجديدة أو التجمع الخامس) للتحويل المباشر إلى محادثة واتساب برسالة حجز مجهزة مسبقاً.
+3. **عن الدكتورة (About Dr. Dina):**
+   - السيرة الذاتية وشهادات الدكتوراه وتخصص طب الجنين والحقن المجهري.
+   - فلسفة الرعاية الإنسانية والاهتمام الفردي بكل سيدة.
+4. **مصفوفة الخدمات التخصصية (Interactive Services):**
+   - طب الجنين والسونار ثلاثي ورباعي وخماسي الأبعاد (Anomaly Scan / NT Scan / Doppler).
+   - علاج تأخر الإنجاب والحقن المجهري وأطفال الأنابيب وتكيس المبايض (PCOS).
+   - الولادة القيصرية بدون ألم (تقنية TAP Block ومضخة المسكن الذاتي PCA) والخياطة التجميلية.
+   - صحة المرأة وجراحات المناظير ووسائل تنظيم الأسرة الحديثة.
+5. **حاسبة موعد الولادة وتطور الحمل التفاعلية (Pregnancy Due Date Calculator):**
+   - إدخال تاريخ آخر دورة شهرية لحساب عمر الحمل بالأسابيع والأيام وموعد الولادة التقديري.
+   - تحديد المواعيد الدقيقة لفحص تشوهات الجنين وحجز الفحص مباشرة عبر واتساب.
+6. **دليل الفروع والمواعيد (Clinics & Hours):**
+   - فرع مصر الجديدة (77 شارع النزهة - ميدان السبع عمارات).
+   - فرع التجمع الخامس (عيادات بليس - 164 شارع التسعين الشمالي بجوار مستشفى الشفا).
+   - روابط مباشرة لخرائط جوجل.
+7. **آراء المريضات وقصص الأمل (Patient Reviews):**
+   - تجارب واقعية وتقييمات موثقة من منصات الحجز الطبية.
+8. **الأسئلة الشائعة (FAQ Accordion):**
+   - إجابات طبية مبسطة تعزز تصدر محركات البحث (SEO).
+9. **زر واتساب عائم ذكي (Floating WhatsApp & Call Center):**
+   - متاح دائماً على شاشات الهواتف مع نافذة لاختيار الفرع بلمسة واحدة.
+10. **البيانات المنظمة لمحركات البحث (SEO Schema Markup):**
+    - وسم مدمج بصيغة JSON-LD لـ `Physician` و `MedicalBusiness` لتسهيل أرشفة الموقع وظهوره في نتائج البحث المحلية.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 النشر السحابي (Deployment)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+المشروع جاهز للنشر بضغطة زر واحدة على:
+- **Vercel** (موصى به لـ Next.js)
+- **Cloudflare Pages**
+- **Netlify**
