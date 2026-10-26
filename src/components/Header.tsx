@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import {
   Phone,
   Calendar,
   Menu,
   X,
   Stethoscope,
+  Sparkles,
 } from "lucide-react";
 
 export default function Header() {
@@ -51,8 +53,17 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Social Icons & CTA Button */}
+        {/* Social Icons, Dark Version Pill & CTA Button */}
         <div className="hidden sm:flex items-center gap-2">
+          <Link
+            href="/v2"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 text-xs font-bold transition-all shadow-xs"
+            title="معاينة النسخة المعمارية الداكنة (Awwwards 2026)"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-rose-400" />
+            <span>النسخة المعمارية الداكنة</span>
+          </Link>
+
           <a
             href="https://www.facebook.com/p/Dr-Dina-Mostafa-clinic-%D8%AF-%D8%AF%D9%8A%D9%86%D8%A7-%D9%85%D8%B5%D8%B7%D9%81%D9%89-100093906760151/"
             target="_blank"
@@ -123,6 +134,14 @@ export default function Header() {
                 <Calendar className="w-4 h-4" />
                 احجزي موعدك الآن
               </a>
+              <Link
+                href="/v2"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full py-2.5 bg-slate-900 text-white rounded-xl font-bold text-center text-xs shadow-md flex items-center justify-center gap-2"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-rose-400" />
+                <span>النسخة المعمارية الداكنة (Awwwards 2026)</span>
+              </Link>
               <a
                 href="tel:01021107881"
                 className="w-full py-2.5 bg-slate-100 text-slate-800 rounded-xl font-semibold text-center text-sm flex items-center justify-center gap-2"
