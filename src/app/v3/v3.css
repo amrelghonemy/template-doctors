@@ -1,0 +1,94 @@
+/* ==========================================
+   V3 — "الإنسانية" Human-Warmth CSS Layer
+   Organic, Maternal, Emotionally Resonant
+   ========================================== */
+
+/* --- Grain / Noise Texture Overlay --- */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+/* --- Organic Blob Shape --- */
+.blob-shape {
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+}
+
+/* --- Warm Parchment Card --- */
+.warm-card {
+  background: linear-gradient(135deg, #fffdf8 0%, #fef9f2 100%);
+  border: 1px solid rgba(205, 163, 115, 0.18);
+  box-shadow: 0 4px 24px -4px rgba(180, 130, 80, 0.10), 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* --- Linen Surface --- */
+.linen-bg {
+  background-color: #faf6ef;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(200, 170, 130, 0.04) 2px,
+      rgba(200, 170, 130, 0.04) 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(200, 170, 130, 0.04) 2px,
+      rgba(200, 170, 130, 0.04) 3px
+    );
+}
+
+/* --- Handwritten Underline Accent --- */
+.hand-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='10' viewBox='0 0 200 10'%3E%3Cpath d='M2 8 Q50 2 100 6 Q150 10 198 4' stroke='%23e07b5a' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 10px;
+  padding-bottom: 12px;
+}
+
+/* --- Warm Glow Pulse for Live Indicator --- */
+@keyframes warm-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+  50% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+}
+.warm-pulse {
+  animation: warm-pulse 2s ease-in-out infinite;
+}
+
+/* --- Soft Float Animation --- */
+@keyframes soft-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.soft-float {
+  animation: soft-float 5s ease-in-out infinite;
+}
+
+/* --- Fade Up Entrance --- */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
